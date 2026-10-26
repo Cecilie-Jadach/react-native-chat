@@ -1,4 +1,4 @@
-const BASE_URL = process.env.REACT_APP_BACKEND_URL;
+const BASE_URL = process.env.EXPO_PUBLIC_BACKEND_URL;
 
 export type Message = {
   id: number;
