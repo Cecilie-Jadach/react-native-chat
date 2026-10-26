@@ -1,4 +1,4 @@
-const BASE_URL = "https://express-chat-production-9340.up.railway.app";
+const BASE_URL = process.env.REACT_APP_BACKEND_URL;
 
 export type Message = {
   id: number;
