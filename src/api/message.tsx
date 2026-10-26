@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8080";
+const BASE_URL = "https://express-chat-production-9340.up.railway.app";
 
 export type Message = {
   id: number;
@@ -6,19 +6,6 @@ export type Message = {
   content: string;
   created_at: string;
 };
-
-// async function request<T>(path: string, options?: RequestInit): Promise<T> {
-//   const response = await fetch(`${BASE_URL}${path}`, {
-//     headers: { "Content-Type": "application/json" },
-//     ...options,
-//   });
-
-//   if (!response.ok) {
-//     throw new Error(`Error status: ${response.status}`);
-//   }
-
-//   return response.json();
-// }
 
 async function request<T>(path: string, options?: RequestInit): Promise<T> {
   const response = await fetch(`${BASE_URL}${path}`, {
